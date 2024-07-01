@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 id: Long
             ) {
                 val selectedItem = arrayLanguage[position]
-                if (!selectedItem.equals("Select Language")){
+                if (selectedItem != "Select Language"){
                     Toast.makeText(this@MainActivity, "Selected $selectedItem", Toast.LENGTH_SHORT).show()
                 }
             
