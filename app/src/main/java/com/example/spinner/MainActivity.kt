@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
 
         val arrayLanguage = arrayOf("Select Language", "Spanish", "English", "French", "German")
         val adapter = ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,arrayLanguage)
